@@ -21,7 +21,6 @@ from io import BytesIO
 response = requests.get('https://storage.googleapis.com/logo-lariis/logo_page_noir.jpg')
 image = Image.open(BytesIO(response.content))
 
-image = Image.open('res/logo_couleur_blanc_arrondi.png')
 st.set_page_config(layout='wide', page_title='Petite enfance: offre et besoins', page_icon=image)
 
 
