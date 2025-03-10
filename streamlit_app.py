@@ -18,7 +18,7 @@ from io import BytesIO
 
 
 
-response = requests.get('https://storage.googleapis.com/logo-lariis/logo_page_noir.jpg')
+response = requests.get('https://storage.googleapis.com/logo-lariis/logo_page_blanc.png')
 image = Image.open(BytesIO(response.content))
 
 st.set_page_config(layout='wide', page_title='Petite enfance: offre et besoins', page_icon=image)
@@ -46,7 +46,7 @@ page_bg_img = f"""
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     
     .st-emotion-cache-1jicfl2 {{
-    width: 100%;
+    width: 100% !important;
     padding: 6rem 0rem 2rem;
     min-width: auto;
     max-width: initial;
