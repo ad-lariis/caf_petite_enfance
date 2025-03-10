@@ -51,7 +51,6 @@ page_bg_img = f"""
     min-width: auto;
     max-width: initial;
     }}
-    
     .block-container {{
         padding-top: 0.5rem;
         }}
